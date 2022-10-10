@@ -37,9 +37,7 @@ const Navigation = () => {
           ? petTypes.map((type) => (
               <li key={type.name}>
                 <NavLink
-                  // Below line is meant to work but is causing a failed build
-                  // to={`/${type._links.self.to.split('/').pop()}`}
-                  to={`/${type.name}`} // temp workaround
+                  to={`/${type._links.self.href.split('/').pop()}`}
                   key={type.name}
                   className="nav-link"
                   activeClassName="nav-link-active"
