@@ -1,0 +1,22 @@
+# Dependency directory
+node_modules
+
+# Source maps
+*.js.map
+
+# Files marked with gitigx
+*gitigx*
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+.vscode
+tmp.json
+
+dist/
+.npm/
+/.changelog
