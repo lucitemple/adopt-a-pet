@@ -2,10 +2,10 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 const PetDetailsNotFound = () => {
-  const { history } = useHistory();
+  const history  = useHistory();
 
   const goBack = () => {
-    history.goBack(); // should work, however is breaking build
+    history.goBack(); 
   };
 
   return (
